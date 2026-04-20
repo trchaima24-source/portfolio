@@ -82,8 +82,8 @@ const Contact = () => {
           </h2>
 
           <p className="text-base md:text-xl text-[#8c9fc4] font-medium leading-relaxed mb-12">
-            I'm always open to discussing marketing strategies and data-driven projects, 
-            and learn from other experiences. Feel free to connect and send a message!
+            I'm always open to discussing marketing strategies, data-driven projects, 
+            and learning from other experiences. Feel free to connect and send a message!
           </p>
 
           <a 

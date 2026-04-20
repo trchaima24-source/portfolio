@@ -4,7 +4,7 @@ export const myProjects = [
     id: 1,
     title: "AI Marketing Scoring System - Kwore Platform",
   description:
-    "Participated in Developing a framework for a marketing scoring system to predict post's impact across the marketing funnel.",
+    "Participated in developing a framework for a marketing scoring system to predict post impact across the marketing funnel.",
   subDescription: [
     "Contributed to the design of a marketing scoring framework that evaluates how social media posts influence different stages of the marketing funnel.",
     "Supported the development of scoring logic linking content signals to funnel stages such as awareness, consideration, conversion, and loyalty.",
@@ -17,14 +17,14 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "Saas Growth strategy",
+    title: "SaaS Growth Strategy",
     description:
-    "Designed and executed the digital growth strategy for Kwore, a B2B SaaS marketing automation platform. ",
+    "Designed and executed the digital growth strategy for Kwore, a B2B SaaS marketing automation platform.",
   subDescription: [
     "Conducted market research and competitive analysis to define positioning and identify growth opportunities in the SaaS ecosystem.",
     "Designed and optimized conversion funnels including lead capture forms to increase qualified leads.",
     "Led multi-channel marketing campaigns across LinkedIn, Instagram, and YouTube while monitoring performance through key growth KPIs.",
-    "Developed the product vision and roadmap while coordinating with developement team to align growth and product strategy.",
+    "Developed the product vision and roadmap while coordinating with development team to align growth and product strategy.",
     ],
     href: "",
     logo: "",
@@ -32,7 +32,7 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Multi-channel content strategy for Saas",
+    title: "Multi-channel Content Strategy for SaaS",
      description:
     "Created a content-driven growth strategy across multiple digital channels to increase brand visibility and audience engagement.",
   subDescription: [
@@ -47,7 +47,7 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "Automated lead generation system",
+    title: "Automated Lead Generation System",
      description:
     "Built automated workflows to streamline lead generation, qualification, and outreach for B2B marketing campaigns.",
   subDescription: [
@@ -61,7 +61,7 @@ export const myProjects = [
   },
     {
     id: 5,
-    title: "Saas launch strategy - Datasphera",
+    title: "SaaS Launch Strategy - Datasphera",
     description:
     "Developed the marketing launch strategy for Datasphera, focusing on market positioning, digital presence, and early user engagement.",
   subDescription: [
@@ -79,7 +79,7 @@ export const mySocials = [
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/triki-chaima/",
-    icon: "assets/socials/linkedIn.svg",
+    icon: "assets/linkedin_logo.png",
   },
 ];
 
@@ -91,10 +91,10 @@ export const experiences = [
     icon: "assets/logos/Kwore.png",
     iconBg: "#383E56",
     contents: [
-      "Conducting market research, identifying growth opportunities, and qualifying/classifying leads",
-      "Automating campaigns (emailing via Apollo/Brevo) and workflows",
-      "Managing multichannel content and tracking KPIs",
-      "Collecting user feedback, and iterating to improve adoption and customer satisfaction",
+      "Conducted market research, identified growth opportunities, and qualified/classified leads",
+      "Automated campaigns (emailing via Apollo/Brevo) and workflows",
+      "Managed multichannel content and tracked KPIs",
+      "Collected user feedback and iterated to improve adoption and customer satisfaction",
     ],
   },
   {
@@ -116,7 +116,7 @@ export const experiences = [
     icon: "assets/logos/olivesoft.png",
     iconBg: "#383E56",
     contents: [
-      "Participated in Designing and implementing a marketing scoring system for marketing funnel optimization",
+      "Participated in designing and implementing a marketing scoring system for marketing funnel optimization",
       "Applied machine learning models to customize performance scores across industries and platforms",
       "Translated analytical findings into actionable business recommendations",
     ],

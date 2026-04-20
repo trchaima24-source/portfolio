@@ -83,6 +83,7 @@ export default function Testimonial() {
       <div className="flex flex-col items-center text-center mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">What People Say</h2>
         <p className="text-white/60 max-w-xl text-base md:text-lg">
+          Collaborating with professionals who value innovation and results.
         </p>
       </div>
 

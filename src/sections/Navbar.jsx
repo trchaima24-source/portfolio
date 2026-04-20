@@ -20,11 +20,6 @@ function Navigation({ closeMenu }) {
         </a>
       </li>
       <li className="nav-li text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5">
-        <a className="nav-link" href="#education" onClick={closeMenu}>
-          Education
-        </a>
-      </li>
-      <li className="nav-li text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5">
         <a className="nav-link" href="#projects" onClick={closeMenu}>
           Projects
         </a>
@@ -61,11 +56,11 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
-            <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              className="w-6 h-6"
-              alt="toggle"
-            />
+            {isOpen ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            )}
           </button>
           <nav className="hidden sm:flex">
             <Navigation closeMenu={closeMenu} />

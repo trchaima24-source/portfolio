@@ -7,22 +7,22 @@ const Education = () => {
       title: "Bachelor’s in Business and Commercial Studies",
       location: "ESSEC Tunis",
       date: "2019 - 2022",
-      status: "Solid Foundation",
-      eta: "56 km/h",
+      status: "Foundation",
+      eta: "Milestone reached",
     },
     {
       title: "Master’s in International Marketing and E-Commerce",
       location: "University of Sfax",
       date: "2022 - 2024",
-      status: "Turn left in 300M",
-      eta: "75 km/h",
+      status: "Specialization",
+      eta: "Level completed",
     },
     {
       title: "Master’s in Data Science for Business and Economics",
       location: "University of Sousse",
       date: "2024 - Present",
-      status: "Destination",
-      eta: "0 km/h",
+      status: "Advanced Research",
+      eta: "In progress",
     }
   ];
 

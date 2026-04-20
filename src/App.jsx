@@ -16,6 +16,7 @@ const App = () => {
     { id: "projects", component: <Projects /> },
     { id: "contact", component: <Contact /> },
     { id: "testimonial", component: <Testimonial /> },
+
   ];
 
   return (

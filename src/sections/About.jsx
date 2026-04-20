@@ -121,7 +121,7 @@ const About = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-lg md:text-xl font-medium text-neutral-400 leading-relaxed" 
           >
-            I specialize in Developing strong marketing strategies and turning complex 
+            I specialize in developing strong marketing strategies and turning complex 
             data into actionable insights through 
             International Marketing and Data Science
           </motion.p>

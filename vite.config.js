@@ -8,7 +8,7 @@ export default defineConfig({
   
   // NOTE: If you are deploying to GitHub Pages, uncomment the line below 
   // and replace 'your-repo-name' with the actual name of your repository.
-  // base: '/your-repo-name/', 
+  base: '/portfolio/', 
 
   build: {
     outDir: 'dist',

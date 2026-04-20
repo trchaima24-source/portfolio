@@ -81,40 +81,42 @@ const Projects = () => {
               <motion.div
                 key={`proj-${project.title}-${item.position}`}
                 animate={{
-                  x: item.position * 260, // Increased spread for larger cards
-                  z: isCenter ? 0 : -200 * absPos, // Reduced depth slightly for a flatter look
-                  rotateY: item.position * -20, // Reduced from -35 for less inclination
-                  opacity: isCenter ? 1 : 0.6 / absPos, // Increased opacity for side cards
-                  scale: isCenter ? 1 : 0.9 - (absPos * 0.05), // Kept side cards slightly larger
+                  x: item.position * 300, // Slightly more spread
+                  z: isCenter ? 0 : -150 * absPos, // Less depth
+                  rotateY: item.position * -15, // Less tilt
+                  opacity: isCenter ? 1 : 0.7 / absPos, // More visible side cards
+                  scale: isCenter ? 1 : 0.9, 
                 }}
-                transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                className="absolute w-[280px] md:w-[360px] aspect-[3/4] cursor-pointer"
+                transition={{ type: "spring", stiffness: 150, damping: 20 }}
+                className="absolute w-[300px] md:w-[380px] aspect-[4/5] cursor-pointer"
                 style={{ zIndex: 10 - absPos }}
                 onClick={() => {
                     if (isCenter) setSelectedProject(project);
                     else item.position < 0 ? handlePrev() : handleNext();
                 }}
               >
-                <div className="w-full h-full rounded-[2rem] overflow-hidden border border-white/20 bg-white/[0.08] backdrop-blur-xl shadow-2xl relative group">
+                <div className="w-full h-full rounded-[2.5rem] overflow-hidden border border-white/20 bg-white/[0.05] backdrop-blur-2xl shadow-2xl relative group">
                   
-                  {/* FRONT FACE: Image and Title */}
-                  <motion.div 
-                    className="absolute inset-0 flex flex-col p-4 transition-all duration-500 group-hover:opacity-0 group-hover:scale-95"
-                  >
-                    <div className="w-full h-[75%] rounded-xl overflow-hidden mb-4 border border-white/10 shadow-lg">
-                      <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                  {/* Image and Content */}
+                  <div className="absolute inset-0 flex flex-col p-5">
+                    <div className="w-full h-[70%] rounded-[1.5rem] overflow-hidden mb-6 border border-white/10 shadow-xl">
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     </div>
-                    <div className="flex-1 flex flex-col justify-center items-center text-center">
-                      <h3 className="text-white text-lg font-black tracking-tight">{project.title}</h3>
+                    <div className="flex-1 flex flex-col justify-start">
+                      <h3 className="text-white text-xl font-black leading-tight mb-2">{project.title}</h3>
+                      <p className="text-white/50 text-xs uppercase tracking-widest font-bold">Project Details</p>
                     </div>
-                  </motion.div>
+                  </div>
 
-                  {/* HOVER FACE: Description */}
-                  <div className="absolute inset-0 p-6 flex flex-col items-center justify-center text-center opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500">
-                    <p className="text-white text-sm leading-relaxed font-medium mb-4">
-                        {project.description.substring(0, 150)}...
+                  {/* HOVER OVERLAY: Description */}
+                  <div className="absolute inset-0 p-8 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-[#0a1128]/90 backdrop-blur-md">
+                    <h3 className="text-white text-lg font-black mb-4">{project.title}</h3>
+                    <p className="text-white/80 text-sm leading-relaxed mb-6">
+                        {project.description}
                     </p>
-                    <span className="text-yellow-400 text-xs font-black uppercase tracking-widest">Click to Read More</span>
+                    <span className="px-6 py-2 rounded-full bg-yellow-400 text-black text-xs font-black uppercase tracking-widest shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        View Details
+                    </span>
                   </div>
 
                 </div>
