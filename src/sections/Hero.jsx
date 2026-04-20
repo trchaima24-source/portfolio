@@ -28,13 +28,14 @@ const Hero = () => {
       
       {/* Full-Screen Background Image without effects */}
       <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* Responsive sizing and positioning for mobile, tablet, and laptop */}
         <img 
           src="assets/ch_back.png" 
           alt="background graphic" 
-          className="w-full h-full object-cover object-center"
+          className="w-full h-[110%] sm:h-[120%] md:h-full object-cover object-[80%_top] md:object-[90%_top] lg:object-center scale-105 md:scale-100 origin-bottom"
         />
         {/* Soft fading gradient at the bottom of the image matching website background */}
-        <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-[#0a1128] via-[#0a1128]/70 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-48 sm:h-64 md:h-48 bg-gradient-to-t from-[#0a1128] via-[#0a1128]/70 to-transparent"></div>
       </div>
 
       {/* Text on the Left */}
