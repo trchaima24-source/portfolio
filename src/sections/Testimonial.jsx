@@ -37,6 +37,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export default function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0); // -1 for left, 1 for right
+  const [isPaused, setIsPaused] = useState(false);
 
   const handleNext = useCallback(() => {
     setDirection(1);
@@ -49,9 +50,10 @@ export default function Testimonial() {
   }, []);
 
   useEffect(() => {
+    if (isPaused) return;
     const timer = setInterval(handleNext, 8000);
     return () => clearInterval(timer);
-  }, [handleNext]);
+  }, [handleNext, isPaused]);
 
   const variants = {
     enter: (direction) => ({
@@ -87,7 +89,11 @@ export default function Testimonial() {
         </p>
       </div>
 
-      <div className="relative z-10 w-full max-w-3xl mx-auto px-4 min-h-[300px] flex items-center">
+      <div 
+        className="relative z-10 w-full max-w-3xl mx-auto px-4 min-h-[300px] flex items-center"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div
             key={currentIndex}
