@@ -49,7 +49,7 @@ const Contact = () => {
             }}
             className={`absolute ${logo.size} opacity-20`}
           >
-            <img src="/assets/linkedin_logo.png" alt="" className="w-full h-full object-contain grayscale brightness-200" />
+            <img src="assets/linkedin_logo.png" alt="" className="w-full h-full object-contain grayscale brightness-200" />
           </motion.div>
         ))}
       </div>
@@ -69,7 +69,7 @@ const Contact = () => {
           className="hidden md:flex w-32 h-32 lg:w-44 lg:h-44 justify-center items-center -translate-y-12"
         >
           <img 
-            src="/assets/linkedin_logo.png" 
+            src="assets/linkedin_logo.png" 
             alt="LinkedIn" 
             className="w-full h-full object-contain drop-shadow-[0_0_60px_rgba(0,119,181,0.4)]"
           />
@@ -110,7 +110,7 @@ const Contact = () => {
           className="w-56 h-56 lg:w-80 lg:h-80 flex justify-center items-center translate-y-10"
         >
           <img 
-            src="/assets/linkedin_logo.png" 
+            src="assets/linkedin_logo.png" 
             alt="LinkedIn" 
             className="w-full h-full object-contain drop-shadow-[0_0_100px_rgba(0,119,181,0.6)]"
           />

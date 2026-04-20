@@ -90,7 +90,7 @@ const About = () => {
                         }}
                     >
                         <img 
-                            src={`/assets/logos/${num}-removebg-preview.png`} 
+                            src={`assets/logos/${num}-removebg-preview.png`} 
                             alt="" 
                             // Increased inner logo size by ~10%
                             className="w-8 h-8 md:w-12 md:h-12 object-contain opacity-100" 

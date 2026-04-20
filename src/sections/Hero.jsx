@@ -29,7 +29,7 @@ const Hero = () => {
       {/* Full-Screen Background Image without effects */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img 
-          src="/assets/ch_back.png" 
+          src="assets/ch_back.png" 
           alt="background graphic" 
           className="w-full h-full object-cover object-center"
         />

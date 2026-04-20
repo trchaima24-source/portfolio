@@ -18,7 +18,7 @@ const ReviewCard = ({ img, name, username, body }) => {
       )}
     >
       <div className="flex items-center gap-4 border-b border-white/5 pb-3">
-        <div className="w-12 h-12 shrink-0 rounded-lg overflow-hidden border border-white/10">
+        <div className="w-14 h-14 shrink-0 rounded-full overflow-hidden border border-white/10 shadow-inner">
           <img className="w-full h-full object-cover" alt={name} src={img} />
         </div>
         <div className="flex flex-col">

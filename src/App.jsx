@@ -75,13 +75,21 @@ const App = () => {
                   Negative bottom margin pulls the 'About' section up under the video.
                 */}
                 <video 
-                  src="/assets/DNA.mp4" 
+                  src="assets/DNA.mp4" 
                   autoPlay 
                   loop 
                   muted 
                   playsInline
+                  preload="auto"
+                  disablePictureInPicture
                   className="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-screen"
-                  style={{ maskImage: 'linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)' }}
+                  style={{ 
+                    maskImage: 'linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)',
+                    willChange: 'transform, opacity',
+                    transform: 'translateZ(0)',
+                    backfaceVisibility: 'hidden'
+                  }}
                 />
               </div>
             )}
